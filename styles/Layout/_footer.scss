@@ -1,0 +1,11 @@
+.footer{
+    font-family: $main-font;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    font-size: 15px;
+    color: lightgrey;
+}
+.footer:hover{
+    color: black;
+}
