@@ -2,6 +2,9 @@
 @import 'general/normalize';
 @import 'general/variables';
 
-// ESTILOS DE LAYOUT & PAGINAS
+// ESTILOS DE LAYOUT 
 @import 'layout/header';
 @import 'layout/footer';
+
+// PAGINAS
+@import 'pages/index'
