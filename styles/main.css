@@ -373,7 +373,7 @@ h2 {
 }
 
 .profile-header {
-  width: 90%;
+  width: 350px;
   background-color: #d65bd6;
   text-align: center;
   cursor: pointer;
@@ -386,7 +386,7 @@ h2 {
 }
 
 .profile-body {
-  width: 90%;
+  width: 350px;
   height: 0;
   overflow: hidden;
   transition: height 0.5s;
