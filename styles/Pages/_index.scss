@@ -1,0 +1,16 @@
+.main-colum{
+    width: 450px;
+    height: 500px;
+    border: 2px solid $secondary-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+    border-radius: 4px;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+  }
