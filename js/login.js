@@ -4,10 +4,20 @@ button.onclick = function validate() {
     let password = document.getElementById("password").value;
     if (username == "Ada" && password == "2019") {
         alert(`Bienvenida ${username}`);
+// PREGUNTAR POR: window.location = "success.html"; // Redirecting to other page.
     } else {
         alert("Login incorrecto. Intente nuevamente");
     }
 }
 
-
-// PREGUNTAR POR: window.location = "success.html"; // Redirecting to other page.
+// const obtenerNombreUsuario = function (){
+//     let user = document.getElementById ('inputUser');
+//     return user.value
+//     }
+//     const obtenerContraseña = function (){
+    
+//     }
+    
+//     const verificarUsuarioYContraseña = function(){
+    
+//     }
