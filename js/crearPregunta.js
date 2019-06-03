@@ -14,4 +14,5 @@ function getAnswers(){
 function displayInputs(){
     getQuestion();
     getAnswers();
+    
 }
