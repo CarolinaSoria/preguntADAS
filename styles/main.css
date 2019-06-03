@@ -380,11 +380,19 @@ template {
   align-items: center;
   font-family: "Rubik", sans-serif;
   border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 5px 6px 30px -16px rgba(128, 123, 128, 0.73);
+  -moz-box-shadow: 5px 6px 30px -16px rgba(128, 123, 128, 0.73);
+  box-shadow: 5px 6px 30px -16px rgba(128, 123, 128, 0.73);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  background-image: url("https://image.freepik.com/vector-gratis/diseno-patron-triangulo-minimo-colores-pastel_1017-14885.jpg");
 }
 
 body {
