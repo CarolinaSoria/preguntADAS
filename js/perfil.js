@@ -40,6 +40,12 @@ let user = {
     versusWon: "7/9"
 }
 
+const mostrarUser = function() {
+    let userInfo = document.getElementById("username");
+    userInfo.innerHTML = `<span>${user.name} | Nivel ${user.level} | ${user.score} Puntos</span>`;
+}
+mostrarUser();
+
 const mostrarFollow = function(follow) {
     for(i = 0; i < follow.length; i++)
     console.log(`${follow[i]}`);
@@ -54,7 +60,7 @@ obtenerCantFollow();
 
 const obtenerCantidades = function() {
     let estadisticas = document.getElementById("title_1");
-    estadisticas.innerHTML = `<p>Preguntas respondidas: ${user.uestionsWon[0]}<br />
+    estadisticas.innerHTML = `<p>Preguntas respondidas: ${user.questionsWon[0]}<br />
     Preguntas respondidas por categoría:<br />
     Competencias ganadas: ${user.versusWon}<br />
     Desafíos ganados: ${user.challengesWon[0]}</p>`;
