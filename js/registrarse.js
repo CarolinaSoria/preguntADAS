@@ -6,11 +6,38 @@ button.onclick = function validate() {
     let checkPassword = document.getElementById("checkPassword").value;
     let email = document.getElementById("email").value;
 
+    fetch("https://preguntadas.herokuapp.com/v1/users/signin", {
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json;  charset=UTF-8"
+        },
+        method: "post",
+        body: JSON.stringify({ 
+            username: username,
+            password: password,
 
-    if (name === "Harry Potter" && username === "HPotter" && password === "hagrid" && 
-    checkPassword === "hagrid" && email === "harrypotter@hogwarts.com") {
-        alert(`Bienvenidx al sitio ${username}`);
-    } else {
-        alert("Alguno de tus datos es incorrecto. Intente nuevamente");
-    }
+
+        })  
+   }).then(function(result) {
+        return result.json();
+   }).then(function(result) {
+       if (result.success){
+        alert("bien");
+       } else {
+           alert("mal");
+       }
+   }).catch(function(error) {
+   });
+   
+
+    // if (name === "Harry Potter" && username === "HPotter" && password === "hagrid" && 
+    // checkPassword === "hagrid" && email === "harrypotter@hogwarts.com") {
+    //     getDat
+    //     alert(`Bienvenidx al sitio ${username}`);
+    // } else {
+    //     alert("Alguno de tus datos es incorrecto. Intente nuevamente");
+
+    // }
 }
+
+   
