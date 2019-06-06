@@ -1,10 +1,10 @@
 let button = document.getElementById("button1");
-button.onclick = function validate() {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    if (username == "HPotter" && password == "hagrid") {
-        alert(`Bienvenidx ${username}`);
-// PREGUNTAR POR: window.location = "success.html"; // Redirecting to other page.
+    button.onclick = function validate() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+if (username == "HPotter" && password == "hagrid") {
+    alert(`Bienvenidx ${username}`);
+    // PREGUNTAR POR: window.location = "success.html"; // Redirecting to other page.
     } else {
         alert("Login incorrecto. Intente nuevamente");
     }
