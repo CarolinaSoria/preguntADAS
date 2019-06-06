@@ -1,84 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../styles/main.css">
-        <title>Crear Pregunta</title>
-    </head>
-    <body>
-        <header>
-            <div>
-                <ul class="menu">
-                    <li class="menu-item"><i class="fas fa-home"></i><a
-                            href="../index.html">Home</a></li>
-                    <li class="menu-item">Jugar</li>
-                    <li class="menu-item">Nueva Pregunta</li>
-                    <li class="menu-item">Nuevo Desafio</li>
-                    <li class="menu-item">Rankings</li>
-                    <li class="menu-item"> <i class="fas fa-bell"></i>Notificaciones</li>
-                    <li class="menu-item"> <i class="fas fa-user-circle"></i>Perfil</li>
-                </ul>
-            </div>
-        </header>
-        <column>
-            <div class="main-colum">
-                <form>
-                    <p>Completa todos los campos para crear tus propias
-                        preguntas!</p>
-                        <p>categoria con lista va aquiiii</p>
-                    <input type="text" name="question" placeholder="Ingresá la pregunta:"
-                    class="username" id="question" />
-                    <input type="text" name="answer" placeholder="Respuesta 1:"class="username"
-                        id="answer-1" />
 
-                    <input type="text" name="answer" placeholder="Respuesta 2:"class="username"
-                        id="answer-2" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Crear Pregunta</title>
+</head>
 
-                    <input type="text" name="answer" placeholder="Respuesta 3:"class="username"
-                        id="answer-3" />
+<body>
+    <header>
+        <div>
+            <ul class="menu">
+                <li class="menu-item"><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
+                <li class="menu-item">Jugar</li>
+                <li class="menu-item">Nueva Pregunta</li>
+                <li class="menu-item">Nuevo Desafio</li>
+                <li class="menu-item">Rankings</li>
+                <li class="menu-item"> <i class="fas fa-bell"></i>Notificaciones</li>
+                <li class="menu-item"> <i class="fas fa-user-circle"></i>Perfil</li>
+            </ul>
+        </div>
+    </header>
+    <column>
+        <div class="main-colum">
+            <p class="description">Completa todos los campos para crear
+                tus propias
+                preguntas!</p>
+                <form name="form2">
+                        <select id="categoryMenu">
+                            <option>Elegi la categoria...</option>
+                            <option value="Disney">Disney</option> <option
+                                value="Geografia">Geografia </option> <option
+                                value="Entretenimiento">Entretenimiento </option> <option
+                                value="Miscelanea">Miscelanea </option> <option
+                                value="Deportes">Deportes </option> <option
+                                value="Historia">Historia</option> <option
+                                value="????">???</option> </select>
+                                </form> 
+                        <form name="myForm">
+                                <input type="text" name="question" placeholder="Ingresá la pregunta:"
+                                class="username" id="question" />
+                            <input type="text" name="answer" placeholder="Respuesta 1:" class="username"
+                                id="answer-1" />
 
-                    <input type="text" name="answer" placeholder="Respuesta 4:"class="username"
-                        id="answer-4" />
+                            <input type="text" name="answer" placeholder="Respuesta 2:" class="username"
+                                id="answer-2" />
 
-                        <div id= "answers-container"> </div>
-<!--                      
-                        
-                    <p>Cual de todas las respuestas es la correcta?</p> 
+                            <input type="text" name="answer" placeholder="Respuesta 3:" class="username"
+                                id="answer-3" />
 
-                    <input type="radio" name="answer" value="1"> Respuesta 1
-                    <br>
-                    
-                    <input type="radio" name="answer" value="2"> Respuesta 2
-                    <br>
-                    <input type="radio" name="answer" value="3"> Respuesta 3
-                    <br>
-                    <input type="radio" name="answer" value="4"> Respuesta 4 -->
-                    <!-- <br> 
-                     <input type="submit" value="Submit" id="submit"> -->
-                    
-                    <a href="#"><div id="btn2" onclick="displayInputs()">Submit</div></a>
-                    
-                    
-                    <a href="#"><div id="btn2" onclick="clearAll()">Borrar Todo</div></a>
-                    <br>
+                            <input type="text" name="answer" placeholder="Respuesta 4:" class="username"
+                                id="answer-4" />
 
-                </form>
+                            <div id="answers-container"> </div>
 
-                <script src="../js/crearPregunta.js"></script>
-            </div>
-        </column>
-        <footer>
-            <p class="footer"> 2019 - Creado por Adas ♥</p>
-        </footer>
-    </body>
+                            <a href="#">
+                                <div id="btn2" onclick="displayInputs()">Submit</div>
+                            </a>
+                            <a href="#">
+                                <div id="btn2" onclick="clearAll()">Borrar Todo</div>
+                            </a>
+                            <br>
+
+                    </form>
+
+                    <script src="../js/crearPregunta.js"></script>
+        </div>
+    </column>
+    <footer>
+        <p class="footer"> 2019 - Creado por Adas ♥</p>
+    </footer>
+</body>
+
 </html>

@@ -8,7 +8,8 @@
         "layout/_header.scss",
         "layout/_footer.scss",
         "pages/_index.scss",
-        "pages/_login.scss"
+        "pages/_login.scss",
+        "pages/_newQuestion.scss"
     ],
     "names": [],
     "file": "main.css"
