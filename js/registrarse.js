@@ -1,3 +1,40 @@
+fetch("https://preguntadas.herokuapp.com/v1/questions/all", {
+     headers: {
+         "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlcmkxMjMiLCJpYXQiOjE1NTk4MzI5NjR9.V9rxAd2wJlo9MgJMcCa1nrdJgMR5RKM3SyiBXPDmG8s"
+     },
+     method: "get",
+}).then(function(result) {
+     return result.json();
+}).then(function(result) {
+    console.log(result);
+}).catch(function(error) {
+
+});
+// fetch("https://preguntadas.herokuapp.com/v1/questions", {
+//      headers: {
+//          "Accept": "application/json",
+//          "Content-Type": "application/json;  charset=UTF-8",
+//          "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlcmkxMjMiLCJpYXQiOjE1NTk4MzI5NjR9.V9rxAd2wJlo9MgJMcCa1nrdJgMR5RKM3SyiBXPDmG8s",
+//      },
+//      method: "post",
+//      body: JSON.stringify({
+//            title: "Por qué razón es conocida Ada Lovelace?",
+//            answer: 2,
+//            answers: [
+//                    "Descubrir un dinosaurio",
+//                    "Ser la primera programadora",
+//                    "Jugar muy bien al tenis",
+//                    "Construir la muralla china"
+//                ],
+//            category: "Peliculas"
+//        })
+//     }).then(function(result) {
+//      return result.json();
+// }).then(function(result) {
+//     console.log(result)
+// }).catch(function(error) {
+
+// });
 let button = document.getElementById("btn2");
 button.onclick = function validate() {
     let name = document.getElementById("name").value;
